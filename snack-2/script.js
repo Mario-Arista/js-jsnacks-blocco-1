@@ -1,5 +1,3 @@
-const arrayEx = [];
-
 const number1 = Number(prompt("Scrivo il primo numero"));
 const number2 = Number(prompt("Scrivo il secondo numero"));
 const number3 = Number(prompt("Scrivo il terzo numero"));
@@ -11,7 +9,6 @@ const number8 = Number(prompt("Scrivo il Ottavo numero"));
 const number9 = Number(prompt("Scrivo il Nono numero"));
 const number10 = Number(prompt("Scrivo il decimo numero"));
 
-console.log(arrayEx);
 
 // Somma Numeri prompt con output
 const outputSumElement = document.getElementById("sum-numbers");

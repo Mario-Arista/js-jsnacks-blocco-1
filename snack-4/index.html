@@ -11,14 +11,34 @@
 </head>
 
 <body>
+    <h1 class=" text-center fs-3 fw-bold mt-3 mb-4">Snack #4</h1>
+    <p class=" text-center fs-6 mt-3 mb-4">Inserisci un numero intero di 4 cifre</p>
 
-    <h1">Snack #4</h1>
+    <form class=" w-50 d-flex justify-content-center text-center gap-2 flex-wrap mb-4 ms-auto me-auto">
+
+        <div class="d-flex flex-column">
+            <label class="text-center" for="number-calc">Inserisci il numero</label>
+            <input id="number-calc" type="number">
+        </div>
 
 
+        <div class="text-center " id="sum-numbers">
+            <input id="primary-button" class="text-white bg-black fw-bold fs-1 " value="INVIO" type="button">
+        </div>
+
+    </form>
+
+    <h2 class="text-center fs-3 fw-bold mt-3 mb-4">Somma delle cifre che compongono il numero:</h2>
+    <div class="d-flex justify-content-center ">
+
+        <div id="sum-numbers" class="fs-1 fw-bold bg-dark text-danger">
+
+        </div>
+    </div>
+    
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <script src="./script.js"></script>
-    
 </body>
 </html>

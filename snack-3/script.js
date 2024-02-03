@@ -43,4 +43,5 @@ buttonInvio.addEventListener("click",
         newElement.innerHTML = arrayWithNumbers[i];
         newElement.classList.add("list-unstyled");
     }
+    
 });
