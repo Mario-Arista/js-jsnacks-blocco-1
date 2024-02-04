@@ -1,8 +1,3 @@
-/*
-L’utente inserisce due parole in successione.
-Il software stampa prima la parola più corta, poi la parola più lunga.
-*/
-
 const oneAsk = prompt("inerisci parola 1");
 const twoAsk = prompt("inerisci parola 2");
 
