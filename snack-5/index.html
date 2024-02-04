@@ -11,7 +11,33 @@
 
 <body>
 
-    <h1">Snack #5</h1>
+    <button class="position-absolute top-0 start-0 bg-black p-3" type="button">
+        <a class="text-white text-decoration-none" class="" href="../index.html">Home</a>
+    </button>
+
+    <h1 class=" text-center fs-3 fw-bold mt-3 mb-4">Snack #5</h1>
+    <p class=" text-center fs-6 fw-light mt-3 mb-4">Inserisci un numero intero e avrai il cubo dei primi N numeri fino a quello indicato da te!</p>
+
+    <form class="text-center mt-3 mb-4">
+
+        <div class="mb-3">
+            <label for="number-user">Inserisci numero</label>
+            <input id="number-user" type="number">
+        </div>
+
+        <div>
+            <input id="button-invio" value="INVIO" type="button" class="bg-dark p-3 fs-4 text-white">
+        </div>
+
+    </form>
+
+    <h2 class="d-none text-center fs-4 fw-bold mt-3 mb-3">Ecco il numero che vuoi:</h2>
+    <div class="text-center">
+        <span id="result" class="d-none col-1 ms-auto me-auto fs-1 p-3 fw-bold bg-dark text-danger text-center">
+
+        </span>
+    </div>
+
 
 
     <!-- Bootstrap -->
