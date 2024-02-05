@@ -13,5 +13,3 @@ for (let i = 0; i < 10; i++) {
 const outputSumElement = document.getElementById("sum-numbers");
 outputSumElement.innerHTML = sum;
 
-// Somma Numeri prompt con output
-const outputNumbersElement = document.getElementById("insert-numbers");

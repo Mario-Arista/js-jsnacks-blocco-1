@@ -1,6 +1,11 @@
 const oneAsk = prompt("inerisci parola 1");
 const twoAsk = prompt("inerisci parola 2");
 
+if (oneAsk == null || twoAsk == null) {
+    alert("Inserisci una parola valida");
+}
+
+
 const lenghtWordOne = oneAsk.length;
 const lenghtWordTwo = twoAsk.length;
 
