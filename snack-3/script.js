@@ -13,35 +13,23 @@ buttonInvio.addEventListener("click",
 
      // Creo un array vuoto 
     const arrayWithNumbers = [];
-    
-    // Mi salvo i valori degli Input
-    const number1 = (document.getElementById("number-one").value);
-    const number2 = (document.getElementById("number-two").value);
-    const number3 = (document.getElementById("number-three").value);
-    const number4 = (document.getElementById("number-four").value);
-    const number5 = (document.getElementById("number-five").value);
-    const number6 = (document.getElementById("number-six").value);
-    
-    // Controllo se ogni numero è dispari e lo aggiungo all'array
-    // Non ho trovato un modo per usare un FOR
-    if (number1 % 2 !== 0) arrayWithNumbers.push(number1);
-    if (number2 % 2 !== 0) arrayWithNumbers.push(number2);
-    if (number3 % 2 !== 0) arrayWithNumbers.push(number3);
-    if (number4 % 2 !== 0) arrayWithNumbers.push(number4);
-    if (number5 % 2 !== 0) arrayWithNumbers.push(number5);
-    if (number6 % 2 !== 0) arrayWithNumbers.push(number6);
 
+    // Mi salvo i valori degli Input + Riempo Array
+    for (let i = 1; i <= 6; i++) {
+        const number = Number(document.getElementById("number-" + i).value);
+        if (number % 2 !== 0) {
+            arrayWithNumbers.push(number);
+            console.log(arrayWithNumbers);
+        }
+    }
 
     // Metto in pagina i numeri dispari
-    const ResultsOutput = document.getElementById("results");
-
-    console.log(arrayWithNumbers);
-    for (let i = 0; i < arrayWithNumbers.length; i++ ) {
-
+    for (let i = 0; i < arrayWithNumbers.length; i++) {
         const newElement = document.createElement("li");
-        containerElement.append(newElement);
         newElement.innerHTML = arrayWithNumbers[i];
+        containerElement.append(newElement);
         newElement.classList.add("list-unstyled");
     }
+
     
 });
